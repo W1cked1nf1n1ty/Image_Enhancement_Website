@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image" src="" alt="Showing the pic"> <br>
+    <button onclick="changeImage('content/imgv_flip.png')">Vertical Picture</button>
+    <button onclick="changeImage('content/imgh_flip.png')">Horizontal Picture</button>
+    <button onclick="changeImage('content/imginvert.png')">Inverted Picture</button>
+    <button onclick="changeImage('content/imglog.png')">Log Picture</button>
+    <button onclick="changeImage('content/imggamma.png')">Gamma Picture</button>
+
+    <script>
+        function changeImage(filename){
+            let img=document.querySelector("#image");
+            img.setAttribute("src",filename)
+        }
+    </script>
+</body>
+</html>
